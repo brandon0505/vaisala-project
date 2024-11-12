@@ -65,7 +65,6 @@ const StormReport: React.FC<StormReportProps> = ({
       : `/${encodedLocation}?`;
 
     const requestURL = `https://data.api.xweather.com/stormreports${locationPath}from=${fromParam}&filter=${filterParam}&limit=100&client_id=${client_id}&client_secret=${client_secret}`;
-    console.log("Request URL:", requestURL);
 
     try {
       const response = await fetch(requestURL);

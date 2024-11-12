@@ -4,10 +4,7 @@ import {
   eventTypeOptions,
   EventTypeOption,
 } from "../constants/EventTypeConfig";
-
-interface ReportCardProps {
-  report: any;
-}
+import { ReportCardProps } from "../interfaces/ReportCardProps";
 
 const ReportCard: React.FC<ReportCardProps> = ({ report }) => {
   const eventType: EventTypeOption | undefined = eventTypeOptions.find(
@@ -44,7 +41,7 @@ const ReportCard: React.FC<ReportCardProps> = ({ report }) => {
             {observedValueLabel}: {report.report.detail.text}
           </p>
         )}
-        
+
         {report.report.comments && (
           <p className="text-sm text-dark mt-2">
             Comments: {report.report.comments}
