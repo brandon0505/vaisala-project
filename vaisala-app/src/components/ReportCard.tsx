@@ -26,7 +26,6 @@ const ReportCard: React.FC<ReportCardProps> = ({ report }) => {
       </div>
 
       <div className="pl-4 flex-grow">
-        {/* Display `type` as the label */}
         <p className="text-lg font-bold text-middle">
           Type: {report.report.type}
         </p>
@@ -40,15 +39,12 @@ const ReportCard: React.FC<ReportCardProps> = ({ report }) => {
           Distance: {report.relativeTo.distanceMI} miles{" "}
           {report.relativeTo.bearingENG}
         </p>
-
-        {/* Display the observed value if `report.detail.text` is populated */}
         {report.report.detail.text && observedValueLabel && (
           <p className="text-sm text-dark mt-2">
             {observedValueLabel}: {report.report.detail.text}
           </p>
         )}
-
-        {/* Always display comments if available */}
+        
         {report.report.comments && (
           <p className="text-sm text-dark mt-2">
             Comments: {report.report.comments}

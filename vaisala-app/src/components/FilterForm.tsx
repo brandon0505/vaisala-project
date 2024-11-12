@@ -44,7 +44,6 @@ const FilterForm: React.FC<FilterFormProps> = ({
       }}
       className="max-w-[30rem] w-full"
     >
-      {/* Location Input with Search Button */}
       <div className="flex items-center gap-2 mb-2">
         <input
           type="text"
@@ -61,7 +60,6 @@ const FilterForm: React.FC<FilterFormProps> = ({
         </button>
       </div>
 
-      {/* Link for Location Input Help */}
       <a
         href="https://www.xweather.com/docs/weather-api/reference/places"
         target="_blank"
@@ -71,7 +69,6 @@ const FilterForm: React.FC<FilterFormProps> = ({
         What's acceptable as a location input?
       </a>
 
-      {/* Dynamic Time Filter Dropdown */}
       <div className="mb-4">
         <label className="block font-medium text-bright mb-1">Time Frame</label>
         <select
@@ -87,7 +84,6 @@ const FilterForm: React.FC<FilterFormProps> = ({
         </select>
       </div>
 
-      {/* Dynamic Event Types Checkboxes */}
       <div>
         <label className="block font-medium text-bright mb-1">
           Event Types
